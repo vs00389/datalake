@@ -54,18 +54,10 @@ public class DemoDataLakeJavaTable {
 //        	    .addProperty("Qualification", "IT");
 //        	tableClient.createEntity(entity);
         System.out.println("BEGIN2__________");
-        
-       // ListEntitiesOptions options = new ListEntitiesOptions().setFilter("Name" + " eq 'AAA'");
+               
         System.out.println("BEGIN3__________");
-        // Loop through the results, displaying information about the entities.
-        tableClient.getEntity("Mumbai","3");
-        TableEntity tableEntity =  tableClient.getEntity("Mumbai","3");
-
-        System.out.printf("Retrieved entity with partition key '%s' and row key '%s'.", tableEntity.getPartitionKey(),
-            tableEntity.getRowKey());
-        
-        	 System.out.println("END__________");
-				
+      
+       				
 				 List<String> propertiesToSelect = new ArrayList<>();
 				  propertiesToSelect.add("Name"); propertiesToSelect.add("Age");
 				 
